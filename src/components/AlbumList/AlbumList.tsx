@@ -18,7 +18,7 @@ const AlbumList = ({ albums }: AlbumListProps) => {
         {albums.albums.map(album => (
           <AlbumItem
             key={album.id}
-            image={album.images.filter(img => img.width === 300)[0].url}
+            image={album.images[0].url}
             name={album.name}
             totalTracks={album.total_tracks}
             popularity={album.popularity}

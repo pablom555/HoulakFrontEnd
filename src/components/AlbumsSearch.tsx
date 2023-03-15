@@ -39,7 +39,7 @@ const AlbumSearch = () => {
         <>
           <Artist
             name={data.artistName}
-            image={data.artistImages.filter(img => img.width === 160)[0].url || ''} 
+            image={data.artistImages[data.artistImages.length -1].url || ''} 
           />
           <AlbumList albums={data} />
         </>
